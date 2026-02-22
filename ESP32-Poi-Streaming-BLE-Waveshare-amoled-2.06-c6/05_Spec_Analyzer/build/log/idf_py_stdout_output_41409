@@ -1,0 +1,86 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/duke/.espressif/python_env/idf5.5_py3.12_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer
+-- IDF_TARGET is not set, guessed 'esp32c6' from sdkconfig '/home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults'
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+-- Minimal build - OFF
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/duke/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/duke/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/duke/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c6
+NOTICE: Dependencies lock doesn't exist, solving dependencies.
+..............................NOTICE: Updating lock file at /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/dependencies.lock
+NOTICE: Processing 15 dependencies:
+NOTICE: [1/15] chmorgan/esp-audio-player (1.0.7)
+NOTICE: [2/15] chmorgan/esp-file-iterator (1.0.0)
+NOTICE: [3/15] chmorgan/esp-libhelix-mp3 (1.0.3)
+NOTICE: [4/15] espressif/cmake_utilities (0.5.3)
+NOTICE: [5/15] espressif/esp-dsp (1.7.0)
+NOTICE: [6/15] espressif/esp_codec_dev (1.3.6)
+NOTICE: [7/15] espressif/esp_io_expander (1.2.0)
+NOTICE: [8/15] espressif/esp_lcd_panel_io_additions (1.0.1)
+NOTICE: [9/15] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [10/15] espressif/esp_lcd_touch_ft5x06 (1.1.0)
+NOTICE: [11/15] espressif/esp_lvgl_port (2.7.0)
+NOTICE: [12/15] lvgl/lvgl (9.4.0)
+NOTICE: [13/15] waveshare/esp32_c6_touch_amoled_2_06 (1.0.0)
+NOTICE: [14/15] waveshare/esp_lcd_sh8601 (1.0.2)
+NOTICE: [15/15] idf (5.5.1)
+-- Project sdkconfig file /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig
+Loading defaults file /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults...
+warning: unknown kconfig symbol 'SPIRAM' assigned to 'y' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'SPIRAM_MODE_OCT' assigned to 'y' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'SPIRAM_FETCH_INSTRUCTIONS' assigned to 'y' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'SPIRAM_RODATA' assigned to 'y' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'SPIRAM_SPEED_80M' assigned to 'y' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'SPIRAM_MALLOC_ALWAYSINTERNAL' assigned to '4096' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'SPIRAM_MALLOC_RESERVE_INTERNAL' assigned to '4096' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'ESP_DEFAULT_CPU_FREQ_MHZ_240' assigned to 'y' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'ESP_BROOKESIA_ENABLE_AI_FRAMEWORK' assigned to 'n' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'ESP_BROOKESIA_GUI_ENABLE_ANIM_PLAYER' assigned to 'n' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'ESP_BROOKESIA_ENABLE_SERVICES' assigned to 'n' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+warning: unknown kconfig symbol 'ESP_BROOKESIA_SYSTEMS_ENABLE_SPEAKER' assigned to 'n' in /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults
+-- Adding linker script /home/duke/esp/v5.5.1/components/riscv/ld/rom.api.ld
+-- Found Python3: /home/duke/.espressif/python_env/idf5.5_py3.12_env/bin/python (found version "3.12.3") found components: Interpreter 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "lvgl_demo_v9" version: 6d69630-dirty
+-- Adding linker script /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.api.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.rvfp.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.wdt.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.systimer.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.version.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.phy.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.coexist.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.net80211.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.pp.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.libc.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.libc-suboptimal_for_misaligned_mem.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib-normal.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/esp_rom/esp32c6/ld/esp32c6.rom.heap.ld
+-- Adding linker script /home/duke/esp/v5.5.1/components/soc/esp32c6/ld/esp32c6.peripherals.ld
+-- LVGL version: 9.4.0
+-- ESP_LCD_PANEL_IO_ADDITIONS: 1.0.1
+-- ESP_LCD_SH8601: 1.0.2
+-- Components: app_trace app_update bootloader bootloader_support bsp_extra bt chmorgan__esp-audio-player chmorgan__esp-file-iterator chmorgan__esp-libhelix-mp3 cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_tee esp_timer esp_vfs_console esp_wifi espcoredump espressif__cmake_utilities espressif__esp-dsp espressif__esp_codec_dev espressif__esp_io_expander espressif__esp_lcd_panel_io_additions espressif__esp_lcd_touch espressif__esp_lcd_touch_ft5x06 espressif__esp_lvgl_port esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl__lvgl lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs waveshare__esp32_c6_touch_amoled_2_06 waveshare__esp_lcd_sh8601 wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /home/duke/esp/v5.5.1/components/app_trace /home/duke/esp/v5.5.1/components/app_update /home/duke/esp/v5.5.1/components/bootloader /home/duke/esp/v5.5.1/components/bootloader_support /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/components/bsp_extra /home/duke/esp/v5.5.1/components/bt /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/chmorgan__esp-audio-player /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/chmorgan__esp-file-iterator /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/chmorgan__esp-libhelix-mp3 /home/duke/esp/v5.5.1/components/cmock /home/duke/esp/v5.5.1/components/console /home/duke/esp/v5.5.1/components/cxx /home/duke/esp/v5.5.1/components/driver /home/duke/esp/v5.5.1/components/efuse /home/duke/esp/v5.5.1/components/esp-tls /home/duke/esp/v5.5.1/components/esp_adc /home/duke/esp/v5.5.1/components/esp_app_format /home/duke/esp/v5.5.1/components/esp_bootloader_format /home/duke/esp/v5.5.1/components/esp_coex /home/duke/esp/v5.5.1/components/esp_common /home/duke/esp/v5.5.1/components/esp_driver_ana_cmpr /home/duke/esp/v5.5.1/components/esp_driver_bitscrambler /home/duke/esp/v5.5.1/components/esp_driver_cam /home/duke/esp/v5.5.1/components/esp_driver_dac /home/duke/esp/v5.5.1/components/esp_driver_gpio /home/duke/esp/v5.5.1/components/esp_driver_gptimer /home/duke/esp/v5.5.1/components/esp_driver_i2c /home/duke/esp/v5.5.1/components/esp_driver_i2s /home/duke/esp/v5.5.1/components/esp_driver_isp /home/duke/esp/v5.5.1/components/esp_driver_jpeg /home/duke/esp/v5.5.1/components/esp_driver_ledc /home/duke/esp/v5.5.1/components/esp_driver_mcpwm /home/duke/esp/v5.5.1/components/esp_driver_parlio /home/duke/esp/v5.5.1/components/esp_driver_pcnt /home/duke/esp/v5.5.1/components/esp_driver_ppa /home/duke/esp/v5.5.1/components/esp_driver_rmt /home/duke/esp/v5.5.1/components/esp_driver_sdio /home/duke/esp/v5.5.1/components/esp_driver_sdm /home/duke/esp/v5.5.1/components/esp_driver_sdmmc /home/duke/esp/v5.5.1/components/esp_driver_sdspi /home/duke/esp/v5.5.1/components/esp_driver_spi /home/duke/esp/v5.5.1/components/esp_driver_touch_sens /home/duke/esp/v5.5.1/components/esp_driver_tsens /home/duke/esp/v5.5.1/components/esp_driver_twai /home/duke/esp/v5.5.1/components/esp_driver_uart /home/duke/esp/v5.5.1/components/esp_driver_usb_serial_jtag /home/duke/esp/v5.5.1/components/esp_eth /home/duke/esp/v5.5.1/components/esp_event /home/duke/esp/v5.5.1/components/esp_gdbstub /home/duke/esp/v5.5.1/components/esp_hid /home/duke/esp/v5.5.1/components/esp_http_client /home/duke/esp/v5.5.1/components/esp_http_server /home/duke/esp/v5.5.1/components/esp_https_ota /home/duke/esp/v5.5.1/components/esp_https_server /home/duke/esp/v5.5.1/components/esp_hw_support /home/duke/esp/v5.5.1/components/esp_lcd /home/duke/esp/v5.5.1/components/esp_local_ctrl /home/duke/esp/v5.5.1/components/esp_mm /home/duke/esp/v5.5.1/components/esp_netif /home/duke/esp/v5.5.1/components/esp_netif_stack /home/duke/esp/v5.5.1/components/esp_partition /home/duke/esp/v5.5.1/components/esp_phy /home/duke/esp/v5.5.1/components/esp_pm /home/duke/esp/v5.5.1/components/esp_psram /home/duke/esp/v5.5.1/components/esp_ringbuf /home/duke/esp/v5.5.1/components/esp_rom /home/duke/esp/v5.5.1/components/esp_security /home/duke/esp/v5.5.1/components/esp_system /home/duke/esp/v5.5.1/components/esp_tee /home/duke/esp/v5.5.1/components/esp_timer /home/duke/esp/v5.5.1/components/esp_vfs_console /home/duke/esp/v5.5.1/components/esp_wifi /home/duke/esp/v5.5.1/components/espcoredump /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/espressif__cmake_utilities /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/espressif__esp-dsp /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/espressif__esp_codec_dev /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/espressif__esp_io_expander /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/espressif__esp_lcd_panel_io_additions /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/espressif__esp_lcd_touch /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/espressif__esp_lcd_touch_ft5x06 /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/espressif__esp_lvgl_port /home/duke/esp/v5.5.1/components/esptool_py /home/duke/esp/v5.5.1/components/fatfs /home/duke/esp/v5.5.1/components/freertos /home/duke/esp/v5.5.1/components/hal /home/duke/esp/v5.5.1/components/heap /home/duke/esp/v5.5.1/components/http_parser /home/duke/esp/v5.5.1/components/idf_test /home/duke/esp/v5.5.1/components/ieee802154 /home/duke/esp/v5.5.1/components/json /home/duke/esp/v5.5.1/components/log /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/lvgl__lvgl /home/duke/esp/v5.5.1/components/lwip /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/main /home/duke/esp/v5.5.1/components/mbedtls /home/duke/esp/v5.5.1/components/mqtt /home/duke/esp/v5.5.1/components/newlib /home/duke/esp/v5.5.1/components/nvs_flash /home/duke/esp/v5.5.1/components/nvs_sec_provider /home/duke/esp/v5.5.1/components/openthread /home/duke/esp/v5.5.1/components/partition_table /home/duke/esp/v5.5.1/components/protobuf-c /home/duke/esp/v5.5.1/components/protocomm /home/duke/esp/v5.5.1/components/pthread /home/duke/esp/v5.5.1/components/riscv /home/duke/esp/v5.5.1/components/rt /home/duke/esp/v5.5.1/components/sdmmc /home/duke/esp/v5.5.1/components/soc /home/duke/esp/v5.5.1/components/spi_flash /home/duke/esp/v5.5.1/components/spiffs /home/duke/esp/v5.5.1/components/tcp_transport /home/duke/esp/v5.5.1/components/ulp /home/duke/esp/v5.5.1/components/unity /home/duke/esp/v5.5.1/components/usb /home/duke/esp/v5.5.1/components/vfs /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/waveshare__esp32_c6_touch_amoled_2_06 /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/managed_components/waveshare__esp_lcd_sh8601 /home/duke/esp/v5.5.1/components/wear_levelling /home/duke/esp/v5.5.1/components/wifi_provisioning /home/duke/esp/v5.5.1/components/wpa_supplicant
+-- Configuring done (62.5s)
+-- Generating done (0.9s)
+-- Build files have been written to: /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build

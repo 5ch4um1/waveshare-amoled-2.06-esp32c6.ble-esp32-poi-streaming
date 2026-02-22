@@ -1,0 +1,71 @@
+Command: ninja flash
+[1/5] cd /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/esp-idf/esptool_py && /home/duke/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/duke/esp/v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/partition_table/partition-table.bin /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/lvgl_demo_v9.bin
+lvgl_demo_v9.bin binary size 0xae510 bytes. Smallest app partition is 0x800000 bytes. 0x751af0 bytes (91%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/bootloader/esp-idf/esptool_py && /home/duke/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/duke/esp/v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/bootloader/bootloader.bin
+Bootloader binary size 0x5c00 bytes. 0x2400 bytes (28%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/duke/esp/v5.5.1/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/duke/esp/v5.5.1 -D "SERIAL_TOOL=/home/duke/.espressif/python_env/idf5.5_py3.12_env/bin/python;;/home/duke/esp/v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32c6" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build -P /home/duke/esp/v5.5.1/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c6 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 lvgl_demo_v9.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-C6 (QFN40) (revision v0.2)
+Features: Wi-Fi 6, BT 5 (LE), IEEE802.15.4, Single Core + LP Core, 160MHz, Unknown Embedded Flash
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: fc:01:2c:ff:fe:fd:e9:20
+BASE MAC: fc:01:2c:fd:e9:20
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000befff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 23552 bytes to 14507...
+Writing at 0x00000000... (100 %)
+Wrote 23552 bytes (14507 compressed) at 0x00000000 in 0.1 seconds (effective 1338.6 kbit/s)...
+Hash of data verified.
+Compressed 714000 bytes to 431203...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c98b... (7 %)
+Writing at 0x000246e6... (11 %)
+Writing at 0x0002ba6e... (14 %)
+Writing at 0x00033c09... (18 %)
+Writing at 0x00039e1a... (22 %)
+Writing at 0x0004035e... (25 %)
+Writing at 0x00046641... (29 %)
+Writing at 0x0004ccc0... (33 %)
+Writing at 0x00053bd7... (37 %)
+Writing at 0x000598b6... (40 %)
+Writing at 0x0005f0ce... (44 %)
+Writing at 0x0006500c... (48 %)
+Writing at 0x0006c243... (51 %)
+Writing at 0x000718d8... (55 %)
+Writing at 0x0007774d... (59 %)
+Writing at 0x0007d0b8... (62 %)
+Writing at 0x00082d76... (66 %)
+Writing at 0x00087fce... (70 %)
+Writing at 0x0008dddb... (74 %)
+Writing at 0x00093eb7... (77 %)
+Writing at 0x00099c86... (81 %)
+Writing at 0x000a01c4... (85 %)
+Writing at 0x000a7509... (88 %)
+Writing at 0x000aeb04... (92 %)
+Writing at 0x000b4f23... (96 %)
+Writing at 0x000bbade... (100 %)
+Wrote 714000 bytes (431203 compressed) at 0x00010000 in 1.8 seconds (effective 3172.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 120...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.0 seconds (effective 1344.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

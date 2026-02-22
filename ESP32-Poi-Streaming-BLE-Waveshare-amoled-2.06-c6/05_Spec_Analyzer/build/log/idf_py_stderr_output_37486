@@ -1,0 +1,9 @@
+CMake Error at /home/duke/esp/esp-idf/tools/cmake/build.cmake:552 (message):
+  ERROR: Because project depends on idf (>=5.3.2) which doesn't match any
+  versions, version solving failed.
+
+Call Stack (most recent call first):
+  /home/duke/esp/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:12 (project)
+
+

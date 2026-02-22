@@ -1,0 +1,20 @@
+-- IDF_TARGET is not set, guessed 'esp32c6' from sdkconfig '/home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults'
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/duke/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/duke/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/duke/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c6
+NOTICE: Dependencies lock doesn't exist, solving dependencies.
+.............................HINT: Please check manifest file of the following component(s): bsp_extra, bsp_extra
+-- Configuring incomplete, errors occurred!

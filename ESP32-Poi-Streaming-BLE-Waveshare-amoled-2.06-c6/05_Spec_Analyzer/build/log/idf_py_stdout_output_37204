@@ -1,0 +1,8 @@
+-- IDF_TARGET is not set, guessed 'esp32s3' from sdkconfig '/home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/sdkconfig.defaults'
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- The ASM compiler identification is unknown
+-- Found assembler: xtensa-esp32s3-elf-gcc
+-- Warning: Did not find file Compiler/-ASM
+-- Configuring incomplete, errors occurred!

@@ -1,0 +1,2 @@
+source /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/bootloader/gdbinit/symbols
+source /home/duke/ESP32-C6-Touch-AMOLED-2.06/examples/ESP-IDF-v5.5.1/05_Spec_Analyzer/build/bootloader/gdbinit/connect

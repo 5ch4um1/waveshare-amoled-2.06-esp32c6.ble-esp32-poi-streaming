@@ -1,0 +1,13 @@
+## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf: ">=5.5.0"
+  waveshare/qmi8658:
+    version: "*"
+  waveshare/esp32_c6_touch_amoled_2_06: "*"
+  lvgl/lvgl:
+    version: "^9.2.0"
+    public: true
+  espressif/esp-dsp: '*'
+  chmorgan/esp-audio-player: "^1.0.7"
+  chmorgan/esp-file-iterator: "^1.0.0"
